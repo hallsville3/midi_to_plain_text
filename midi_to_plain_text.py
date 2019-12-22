@@ -5,7 +5,7 @@ import sys
 try:
     filename = sys.argv[1]
 except:
-    print("Usage: python {} filename.mid".format(sys.argv[0]))
+    print("Usage: python3 {} filename.mid".format(sys.argv[0]))
     exit(1)
 
 try:
