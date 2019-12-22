@@ -7,7 +7,7 @@ try:
 except:
     print("Usage: python {} filename.mid".format(sys.argv[0]))
     exit(1)
-    
+
 try:
     import py_midicsv as pm
 except:
@@ -29,8 +29,6 @@ midi_note_dict = {
 108:'C8'
 }
 
-
-filename = "scale.mid"
 
 #Parse the midi file into a csv text format
 csv_string = pm.midi_to_csv(filename)
