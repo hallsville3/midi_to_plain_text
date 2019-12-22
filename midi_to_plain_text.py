@@ -83,13 +83,15 @@ for time_note in cleaned_lines:
 
 #Now we just need to convert from clocks to note type
 note_length_dict = {
+clocks_per_quarter / 16: 'sixtyfourthNote',
 clocks_per_quarter / 8 : 'thirtysecondNote',
 clocks_per_quarter / 4 : 'sixteenthNote',
 clocks_per_quarter / 2 : 'eigthNote',
 clocks_per_quarter     : 'quarterNote',
 clocks_per_quarter * 2 : 'halfNote',
 clocks_per_quarter * 4 : 'wholeNote',
-clocks_per_quarter * 8 : 'doublewholeNote'
+clocks_per_quarter * 8 : 'doublewholeNote',
+clocks_per_quarter * 16: 'quadruplewholeNote'
 }
 
 #Change the second entry to the corresponding dictionary value
