@@ -98,5 +98,7 @@ notes = [(note[0], note_length_dict[note[1]]) for note in notes]
 print("Writing to file...")
 with open("plain_{}.txt".format(filename), 'w') as f:
     #[1:-1] to avoid the brackets of the list
-    f.write(str(notes)[1:-1])
+    note_string = str(notes)[1:-1]
+    note_string = note_string.replace("'", "")
+    f.write(note_string)
 print("Successfully saved the converted file to {}".format("plain_{}.txt".format(filename)))
